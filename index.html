@@ -3,35 +3,82 @@
 <head>
 	<title>Module 2 Course Solution</title>
 	<style type="text/css">
-		
+		*{
+			box-sizing: border-box;
+		}
+		h1{text-align: center;}
+		.container {
+			text-align: center;
+		}
+		section{
+			background-color: lightgrey;
+			border: 2px solid;
+			margin: 5px;
+		}
+		section>span {
+			border: 2px solid;
+			padding: 2px;
+			float: right;
+			width: 100px;
+			text-align: center;
+			border-color: #000;
+
+
+		}
+		section>p {
+			clear: both;
+
+			padding: 5px;
+		}
+		span.chicken {
+			background-color: pink;
+
+		}
+		span.beef {
+			background-color: red;
+			color: #ffffff;
+
+		}
+		span.sushi {
+			background-color: yellow;
+		}
+		@media screen and (min-width: 992px) {
+		  section {
+		    float: left;
+		    width: 30%;
+		  }
+		}
 	</style>
 </head>
 <body>
 <h1>Our Menu</h1>
-<section>
-	<span>Chicken</span>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-<section>
-	<span>Beef</span>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
-<section>
-	<span>Sushi</span>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+<div class="container">
+	<section>
+		<span class="chicken">Chicken</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section>
+		<span class="beef">Beef</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+	<section>
+		<span class="sushi">Sushi</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></section>
+		
+</div>
 </body>
 </html>
